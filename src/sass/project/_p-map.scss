@@ -1,0 +1,21 @@
+@use "setting" as *;
+
+.p-map__inner {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.p-map__img {
+  @include mq("md") {
+    margin-left: 18.5129%;
+    flex: 0 0 32.9032%;
+  }
+}
+
+.p-map__list {
+  margin-top: rem(42);
+  @include mq("md") {
+    margin-left: 9.6774%;
+  }
+}

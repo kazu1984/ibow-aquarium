@@ -1,0 +1,6 @@
+@use "setting" as *;
+
+.l-top-event {
+  margin-top: rem(41);
+  z-index: map-get($layer, "event"); 
+}

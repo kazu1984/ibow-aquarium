@@ -1,0 +1,33 @@
+@use "setting" as *;
+
+.p-top-menu {
+  background-color: $color-background-white;
+  z-index: map-get($layer, "top-menu");
+}
+
+.p-top-menu__inner {
+  text-align: center;
+  @include mq("lg") {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.p-top-menu__nav {
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+}
+
+.p-top-menu__business-hours {
+  margin-left: rem(15);
+}
+
+/* ----------------------------------
+js操作
+---------------------------------- */
+.js-top-menu.fixed-menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}

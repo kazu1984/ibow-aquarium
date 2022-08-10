@@ -1,0 +1,58 @@
+@use "setting" as *;
+
+.p-top-food {
+  position: relative;
+}
+
+.p-top-food__top {
+  position: relative;
+}
+
+.p-top-food__top::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/tatsunootoshigo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(113);
+  height: rem(124);
+  top: 40%;
+  left: 60%;
+  transform: translateY(-50%);
+  @include mq("md") {
+    width: rem(209);
+    height: rem(240);
+  }
+}
+
+.p-top-food__media {
+  padding-top: rem(120);
+  @include mq("md") {
+    display: flex;
+    padding-top: rem(80);
+  }
+}
+
+.p-top-food__bottom {
+  position: relative;
+}
+
+.p-top-food__bottom::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/food-fish.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(100);
+  height: rem(110);
+  top: -10%;
+  left: 7%;
+  @include mq("md") {
+    width: rem(231);
+    height: rem(241);
+    top: 15%;
+    left: 7%;
+  }
+}

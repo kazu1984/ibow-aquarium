@@ -1,0 +1,40 @@
+@use "setting" as *;
+
+.p-top-map {
+  position: relative;
+}
+
+.p-top-map__top {
+  position: relative;
+}
+
+.p-top-map__top::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/orca_map.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(116);
+  height: rem(135);
+  top: 40%;
+  left: 65%;
+  transform: translateY(-50%);
+  @include mq("md") {
+    width: rem(257);
+    height: rem(297);
+  }
+}
+
+.p-top-map__contents {
+  padding-top: rem(115);
+  @include mq("md") {
+    padding-top: rem(38);
+  }
+}
+
+.p-top-map__bottom  img {
+  max-height: rem(198);
+  object-fit: cover;
+  object-position: bottom;
+}

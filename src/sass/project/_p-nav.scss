@@ -1,0 +1,49 @@
+@use "setting" as *;
+
+.p-nav__items {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: rem(20);
+  @include mq("md") {
+    flex-wrap: nowrap;
+    gap: rem(80);
+  }
+}
+
+.p-nav__item {
+  text-align: center;
+  transition: opacity $transition;
+  text-align: left;
+}
+
+.p-nav__item a {
+  display: flex;
+  align-items: center;
+  @include mq("md") {
+    display: block;
+  }
+}
+
+.p-nav__item:hover {
+  opacity: 0.6;
+}
+
+.p-nav__icon {
+  width: rem(40);
+  height: rem(40);
+  @include mq("md") {
+    width: rem(80);
+    height: rem(80);
+    margin: auto;
+  }
+}
+
+.p-nav__text {
+  display: inline-block;
+  margin-left: rem(10);
+  @include mq("md") {
+    margin-top: rem(14);
+    margin-left: 0;
+  }
+}

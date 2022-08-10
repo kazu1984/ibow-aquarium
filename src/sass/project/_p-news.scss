@@ -1,0 +1,65 @@
+@use "setting" as *;
+
+.p-news__top {
+  padding-bottom: rem(2);
+  @include mq("sm") {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-news__top-title {
+  display: flex;
+  align-items: center;
+  @include mq("sm") {
+    display: contents;
+  }
+}
+
+.p-news__title {
+  font-family: $second-font-family;
+  font-size: rem(32);
+  text-transform: uppercase;
+  color: $color-theme-main;
+}
+
+.p-news__sub-title {
+  font-size: rem(14);
+  margin-left: rem(20);
+}
+
+.p-news__button {
+  // margin: auto;
+  @include mq("sm") {
+    margin-left: auto;
+  }
+}
+
+.p-news__list {
+  margin-top: rem(12);
+}
+
+.p-news__item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.p-news__item + .p-news__item {
+  margin-top: rem(10);
+}
+
+.p-news__label {
+  display: block;
+  font-size: rem(14);
+  color: $grey2;
+  background-color: $color-theme-pale;
+  padding: rem(2) rem(9);
+}
+
+.p-news__link {
+  display: block;
+  font-size: rem(14);
+  letter-spacing: 0.08em;
+  margin-left: rem(5);
+  padding: rem(2) 0;
+}

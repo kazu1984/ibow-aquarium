@@ -1,0 +1,47 @@
+@use "setting" as *;
+
+.c-section-title {
+  display: inline-block;
+  position: relative;
+  font-size: rem(56);
+  font-family: $second-font-family;
+  color: $color-theme-main;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  @include mq("md") {
+    font-size: rem(96);
+  }
+}
+
+.c-section-title::before {
+  content: attr(data-ja) "";
+  position: absolute;
+  width: 100%;
+  font-size: rem(16);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  color: $color-base-text;
+  letter-spacing: 0.1em;
+  left: 49.7%;
+  top: rem(90);
+  transform: translateX(-50%);
+  @include mq("md") {
+    top: rem(133);
+  }
+}
+
+.c-section-title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/Frame.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(280);
+  height: rem(14);
+  left: 49.7%;
+  top: rem(120);
+  transform: translateX(-50%);
+  @include mq("md") {
+    top: rem(163);
+  }
+}

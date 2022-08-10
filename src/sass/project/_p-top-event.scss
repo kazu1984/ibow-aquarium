@@ -1,0 +1,44 @@
+@use "setting" as *;
+
+.p-top-event {
+  position: relative;
+}
+
+.p-top-event__top {
+  position: relative;
+}
+
+.p-top-event__top::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/manta.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(211);
+  height: rem(71);
+  top: 0;
+  left: 8%;
+  @include mq("md") {
+    width: rem(422);
+    height: rem(142);
+  }
+}
+
+.p-top-event__media {
+  padding-top: rem(120);
+  @include mq("md") {
+    display: flex;
+    padding-top: rem(80);
+  }
+}
+
+.p-top-event__media + .p-top-event__media {
+  padding-top: rem(117);
+}
+
+.p-top-event__button {
+  text-align: center;
+  padding-top: rem(100);
+}
+

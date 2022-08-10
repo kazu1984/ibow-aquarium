@@ -1,0 +1,11 @@
+@use "setting" as *;
+
+.c-dot-wave {
+  display: block;
+  background-image: url("../images/common/dot-wave.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: rem(255);
+  height: rem(13);
+  margin: auto;
+}

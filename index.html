@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- meta情報 -->
+  <title>あいぼう水族館</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="あいぼう水族館">
+  <meta property="og:site_name" content="あいぼう水族館">
+  <meta property="og:description" content="ibow企画のデザインカンプをコーディング">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="xxxxxx.xx.xx">
+  <meta property="og:image" content="xxxxxx.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ユーザー名">
+
+  <!-- タッチアイコン -->
+  <link rel="apple-touch-icon" sizes="192x192" href="./dist/images/common/icon.png">
+  <link rel="shortcut icon" sizes="192x192" href="./dist/images/common/icon.png">
+
+  <!-- ファビコン -->
+  <link rel="”icon”" href="./dist/images/common/icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+JP:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="./dist/css/styles.css">
+
+
+</head>
+
+<body>
+
+  <header class="p-header l-header">
+    <div class="p-header__inner l-inner">
+      <div class="p-header__logo p-logo">
+        <img src="./dist/images/top/logo.png" alt="">
+      </div>
+      <ul class="p-header__sns p-sns">
+        <li class="p-sns__icon"><a href="#"><img src="./dist/images/top/twitter.png" alt=""></a></li>
+        <li class="p-sns__icon"><a href="#"><img src="./dist/images/top/instagram.png" alt=""></a></li>
+        <li class="p-sns__icon"><a href="#"><img src="./dist/images/top/facebook.png" alt=""></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="p-top-mv l-top-mv">
+      <div class="p-top-mv__inner l-inner">
+        <div class="p-top-mv__text">
+          <p class="p-top-mv__sub-text">Welcome to the ibow aquarium</p>
+          <h1 class="p-top-mv__main-text">人と生き物が<br>想いやり、つながる場所。</h1>
+        </div>
+      </div>
+    </section>
+
+    <div class="p-top-menu l-top-menu js-top-menu">
+      <div class="p-top-menu__inner l-inner">
+        <nav class="p-top-menu__nav p-nav">
+          <ul class="p-nav__items">
+            <li class="p-nav__item">
+              <a href="#">
+                <figure class="p-nav__icon">
+                  <img src="./dist/images/top/menu-clock.png" alt="">
+                </figure>
+                <span class="p-nav__text">営業案内・料金</span>
+              </a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#">
+                <figure class="p-nav__icon">
+                  <img src="./dist/images/top/menu-event.png" alt="">
+                </figure>
+                <span class="p-nav__text">イベント</span>
+              </a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#">
+                <figure class="p-nav__icon">
+                  <img src="./dist/images/top/menu-pickup.png" alt="">
+                </figure>
+                <span class="p-nav__text">展示内容</span>
+              </a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#">
+                <figure class="p-nav__icon">
+                  <img src="./dist/images/top/menu-food.png" alt="">
+                </figure>
+                <span class="p-nav__text">お食事</span>
+              </a>
+            </li>
+            <li class="p-nav__item">
+              <a href="#">
+                <figure class="p-nav__icon">
+                  <img src="./dist/images/top/menu-access.png" alt="">
+                </figure>
+                <span class="p-nav__text">アクセス</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="p-top-menu__business-hours p-business-hours">
+          <p class="business-hours__title">営業時間のお知らせ</p>
+          <p class="p-business-hours__time">10：00～18：00</p>
+          <p class="p-business-hours__close">休園日　年末年始<span class="u-text-inline-block">12/30-1/3</span></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="p-top-info l-top-info">
+      <div class="p-top-info__inner l-inner">
+        <div class="p-top-info__news p-news">
+          <div class="p-news__top c-title-underline">
+            <div class="p-news__top-title">
+              <h2 class="p-news__title">news</h2>
+              <p class="p-news__sub-title">お知らせ</p>
+            </div>
+            <div class="p-news__button c-button c-button--info">
+              <a href="#">もっと見る&nbsp; &nbsp; →</a>
+            </div>
+          </div>
+          <ul class="p-news__list">
+            <li class="p-news__item">
+              <time class="p-news__label" datetime="2022-03-11">2022.03.11</time>
+              <a href="#" class="p-news__link">ラッコが赤ちゃんを生みました！</a>
+            </li>
+            <li class="p-news__item">
+              <time class="p-news__label" datetime="2022-01-01">2022.01.01</time>
+              <a href="#" class="p-news__link">あけましておめでとうございます！今年もよろしくおねがいします！ </a>
+            </li>
+            <li class="p-news__item">
+              <time class="p-news__label" datetime="2022-03-11">2021.12.10</time>
+              <a href="#" class="p-news__link">年末年始の営業のお知らせ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="p-top-info__corona p-corona">
+          <div class="p-corona__top c-title-underline">
+            <h2 class="p-corona__title">新型コロナ感染症対策について</h2>
+          </div>
+          <ul class="p-corona__list">
+            <li class="p-corona__item">出入り口にセンサーを設置し、入館者数、館内滞留者数をリアルタイムで把握しています。</li>
+            <li class="p-corona__item">館内28か所にカメラを設置し、館内の混雑状況を把握しています。
+            </li>
+            <li class="p-corona__item">混雑時は、入館を制限しています。
+            </li>
+            <li class="p-corona__item">検温（37.5度以上の方の入場お断り）やマスク着用のお願いしています。
+            </li>
+            <li class="p-corona__item">外気導入型空調、サーキュレーターの設置による換気強化をしています。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-top-event l-top-event">
+      <div class="p-top-event__top p-section-top c-anime-fuwafuwa-after">
+        <img src="./dist/images/top/bg-sand-top.png" alt="">
+        <h2 class="p-section-top__title c-section-title" data-ja="イベントのご案内">event</h2>
+      </div>
+      <div class="p-top-event__contents">
+        <ul class="p-top-event__media-wrapper">
+          <li class="p-top-event__media p-media c-bg-sand">
+            <div class="p-media__inner l-inner">
+              <div class="p-media__body">
+                <div class="p-media__title c-event-title">
+                  <p class="c-event-title__en">orca</p>
+                  <h3 class="c-event-title__ja">シャチショー</h3>
+                </div>
+                <p class="p-media__text">あいぼう水族館の人気No.1はシャチのジョーくん。<br>3ｍ近くジャンプする姿は圧巻！<br>大迫力のショーをお楽しみください。</p>
+                <dl class="p-media__meta c-meta">
+                  <dt class="c-meta__title">開催日</dt>
+                  <dd class="c-meta__text">毎週月・水・金曜日</dd>
+                  <dt class="c-meta__title">開催時間</dt>
+                  <dd class="c-meta__text">12：00・14：00</dd>
+                </dl>
+              </div>
+              <figure class="p-media__img">
+                <img src="./dist/images/top/orca_show.png" alt="">
+              </figure>
+            </div>
+          </li>
+          <li class="p-top-event__media p-media c-bg-sand">
+            <div class="p-media__inner l-inner">
+              <div class="p-media__body">
+                <div class="p-media__title p-media__title--right c-event-title">
+                  <p class="c-event-title__en c-event-title__en--sm">capybara</p>
+                  <h3 class="c-event-title__ja c-event-title__ja--right">カピバラ　ふれあいコーナー</h3>
+                </div>
+                <p class="p-media__text">げっ歯類の中でも1番大きな体を持つカピバラ。<br>カピバラの毛ってどんな触り心地？！<br>可愛らしい表情も、間近でご覧ください。</p>
+                <div class="p-media__meta">
+                  <dl class="p-media__meta-box c-meta">
+                    <dt class="c-meta__title">開催日</dt>
+                    <dd class="c-meta__text">毎日</dd>
+                    <dt class="c-meta__title">開催時間</dt>
+                    <dd class="c-meta__text">10：00～15：00</dd>
+                  </dl>
+                  <span class="p-media__meta-sub">※12：00～13：00は休憩</span>
+                  <dl class="p-media__meta-box c-meta">
+                    <dt class="c-meta__title">料金</dt>
+                    <dd class="c-meta__text">ごはん代　100円</dd>
+                  </dl>
+                </div>
+              </div>
+              <figure class="p-media__img">
+                <img src="./dist/images/top/capybara.png" alt="">
+              </figure>
+            </div>
+          </li>
+        </ul>
+        <div class="p-top-event__button c-bg-sand">
+          <a href="#" class="c-button">イベント一覧はこちら</a>
+        </div>
+      </div>
+      <div class="p-top-event__bottom">
+        <img src="./dist/images/top/bg-sand-bottom.png" alt="">
+      </div>
+    </section>
+
+    <section class="p-top-pickup l-top-pickup">
+      <div class="p-top-pickup__top p-section-top">
+        <img src="./dist/images/top/bg-blue-top.png" alt="">
+        <h2 class="p-section-top__title c-section-title" data-ja="展示のご案内">pick up</h2>
+      </div>
+      <div class="p-top-pickup__contents">
+        <div class="l-inner">
+          <ul class="p-top-pickup__cards p-cards">
+            <li class="p-card">
+              <figure class="p-card__img">
+                <img src="./dist/images/top/card1.png" alt="">
+              </figure>
+              <h3 class="p-card__title">海中トンネル</h3>
+              <p class="p-card__text">
+                あいぼう水族館の海中トンネルは、40種類以上の魚を展示しており、16種類の美しいサンゴ礁と熱帯魚が織りなす色彩が美しい人気スポットです。<br>ガンギエイにごはんをあげる飼育員の姿も見られたらラッキーです。
+              </p>
+            </li>
+            <li class="p-card">
+              <figure class="p-card__img">
+                <img src="./dist/images/top/card2.png" alt="">
+              </figure>
+              <h3 class="p-card__title">ペンギン広場</h3>
+              <p class="p-card__text">
+                まるでヘアバンドのような白い帯模様が印象的なジェンツーペンギン。愛くるしい姿とは裏腹に、ほかのペンギンよりも泳ぐのが速いという特徴も。泳ぎはもちろん、個性豊かなペンギンたちの動きにもご注目！ぜひお気に入りの1羽を見つけてください。
+              </p>
+            </li>
+            <li class="p-card">
+              <figure class="p-card__img">
+                <img src="./dist/images/top/card3.png" alt="">
+              </figure>
+              <h3 class="p-card__title">クラゲコーナー</h3>
+              <p class="p-card__text">常時30種類以上のクラゲを展示しているクラゲコーナー。キラキラしたクラゲに囲まれた、非日常空間をお楽しみください。</p>
+            </li>
+          </ul>
+          <div class="p-top-pickup__images-title">
+            <span class="c-dot-wave"></span>
+            <h3 class="p-top-pickup__images-title-text c-anime-fuwafuwa-after">約700種類の魚を展示！</h3>
+            <span class="c-dot-wave"></span>
+          </div>
+          <ul class="p-top-pickup__images p-top-pickup__cards--4 p-cards">
+            <li class="p-card">
+              <figure class="p-card__img p-card__img--square">
+                <img src="./dist/images/top/card4.png" alt="">
+              </figure>
+            </li>
+            <li class="p-card">
+              <figure class="p-card__img p-card__img--square">
+                <img src="./dist/images/top/card5.png" alt="">
+              </figure>
+            </li>
+            <li class="p-card">
+              <figure class="p-card__img p-card__img--square">
+                <img src="./dist/images/top/card6.png" alt="">
+              </figure>
+            </li>
+            <li class="p-card">
+              <figure class="p-card__img p-card__img--square">
+                <img src="./dist/images/top/card7.png" alt="">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-top-pickup__bottom c-anime-fuwafuwa-after">
+        <img src="./dist/images/top/bg-blue-bottom.png" alt="">
+        <div class="p-top-pickup__button">
+          <a href="#" class="c-button">あいぼう水族館の仲間たち</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-top-food l-top-food">
+      <div class="p-top-food__top p-section-top c-anime-fuwafuwa-after">
+        <img src="./dist/images/top/bg-sand-top.png" alt="">
+        <h2 class="p-top-food__title p-section-top__title c-section-title" data-ja="お食事">food</h2>
+      </div>
+      <div class="p-top-food__contents">
+        <ul class="p-top-food__media-wrapper">
+          <li class="p-top-food__media p-media c-bg-sand">
+            <div class="p-media__inner l-inner">
+              <div class="p-media__body">
+                <h3 class="p-media__small-title">レストラン「Harukaze」</h3>
+                <p class="p-media__text p-media__text--food">
+                  使用する食材にこだわり、味もボリュームも、大人からお子様まで満足いただけるメニューを揃えています。テイクアウトメニューもご用意しています。</p>
+                <dl class="p-media__meta c-meta">
+                  <dt class="c-meta__title">営業時間</dt>
+                  <dd class="c-meta__text">11：00～16：00</dd>
+                </dl>
+                <div class="p-media__button">
+                  <a href="#" class="c-button c-button--food">レストランのメニューを見る</a>
+                </div>
+              </div>
+              <figure class="p-media__img p-media__img--food">
+                <img src="./dist/images/top/food.png" alt="">
+              </figure>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="p-top-food__bottom c-anime-fuwafuwa-after">
+        <img src="./dist/images/top/bg-sand-bottom.png" alt="">
+      </div>
+    </section>
+
+    <section class="p-top-price l-top-price">
+      <div class="p-top-price__top p-section-top">
+        <img src="./dist/images/top/bg-blue-top.png" alt="">
+        <h2 class="p-section-top__title c-section-title" data-ja="入場料金">price</h2>
+      </div>
+      <div class="p-top-price__contents">
+        <div class="l-inner">
+          <table class="p-top-price__table p-tabel">
+            <thead class="p-table__header">
+              <tr class="p-table__tr">
+                <td class="p-table__border-none"></td>
+                <th class="p-table__class" scope="col">一般料金</th>
+                <th class="p-table__class" scope="col">年間<span class="u-text-inline-block">パスポート</span></th>
+              </tr>
+            </thead>
+            <tbody class="p-table__body">
+              <tr class="p-table__tr">
+                <th class="p-table__age">小学生</th>
+                <td data-label="一般料金" class="p-table__price">400円</td>
+                <td data-label="年間パスポート" class="p-table__price">1600円</td>
+              </tr>
+              <tr class="p-table__tr">
+                <th class="p-table__age">中学生</th>
+                <td data-label="一般料金" class="p-table__price">200円</td>
+                <td data-label="年間パスポート" class="p-table__price">800円</td>
+              </tr>
+              <tr class="p-table__tr">
+                <th class="p-table__age">３歳以下</th>
+                <td data-label="一般料金" class="p-table__price">無料</td>
+                <td data-label="年間パスポート" class="p-table__price">無料</td>
+              </tr>
+              <tr class="p-table__tr">
+                <th class="p-table__age">シルバー</th>
+                <td data-label="一般料金" class="p-table__price">250円</td>
+                <td data-label="年間パスポート" class="p-table__price">1000円</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="p-top-price__privilege p-privilege">
+            <h3 class="p-privilege__title">年間パスポートの特典</h3>
+            <div class="p-privilege__inner">
+              <ol class="p-privilege__list p-num-list">
+                <li class="p-num-list__item">
+                  館内のショップ(売店・レストラン)でレジにて会計から5％引き</li>
+                <li class="p-num-list__item">チケット窓口にて同伴者通常料金より10％割引</li>
+                <li class="p-num-list__item">年間で24回ご来場でオリジナルブロックのプレゼント</li>
+              </ol>
+              <figure class="p-privilege__img">
+                <img src="./dist/images/top/privilege.png" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-top-price__bottom">
+        <img src="./dist/images/top/bg-blue-bottom.png" alt="">
+      </div>
+    </section>
+
+    <section class="p-top-map l-top-map">
+      <div class="p-top-map__top p-section-top c-anime-fuwafuwa-after">
+        <img src="./dist/images/top/bg-sand-top.png" alt="">
+        <h2 class="p-top-map__title p-section-top__title c-section-title" data-ja="フロアマップ">map</h2>
+      </div>
+      <div class="p-top-map__contents c-bg-sand">
+        <div class="p-map l-inner">
+          <div class="p-map__inner">
+            <figure class="p-map__img">
+              <img src="./dist/images/top/floormap.png" alt="">
+            </figure>
+            <ul class="p-map__list p-latin-list">
+              <li class="p-latin-list__item">売店</li>
+              <li class="p-latin-list__item">熱帯魚コーナー</li>
+              <li class="p-latin-list__item">レストラン</li>
+              <li class="p-latin-list__item">海中トンネル・ペンギン広場</li>
+              <li class="p-latin-list__item">ショープール</li>
+              <li class="p-latin-list__item">ふれあい広場</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="p-top-map__bottom">
+        <img src="./dist/images/top/bg-sand-bottom.png" alt="">
+      </div>
+    </section>
+
+    <section class="p-top-access l-top-access">
+      <div class="p-top-access__top p-section-top c-anime-fuwafuwa-after">
+        <h2 class="p-top-access__title c-section-title" data-ja="アクセス">access</h2>
+      </div>
+      <div class="p-top-access__contents p-access l-inner">
+        <div class="p-access__inner">
+          <div class="p-access__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.5358037549986!2d139.69982564443188!3d35.688430302134954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2z5paw5a6_6aeF!5e0!3m2!1sja!2sjp!4v1659807982802!5m2!1sja!2sjp"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="p-access__aside">
+            <div class="p-access__howto">
+              <div class="p-access__label">
+                <span class="p-access__label-img p-access__label-img--train"></span>
+                <h3 class="p-access__label-text">電車でお越しのお客様</h3>
+              </div>
+              <p class="p-access__text">中央線・山手線　新宿駅から徒歩1分</p>
+              <p class="p-access__text">西武新宿線　西武新宿駅から徒歩10分</p>
+              <div class="p-access__label">
+                <span class="p-access__label-img p-access__label-img--car"></span>
+                <h3 class="p-access__label-text">お車でお越しのお客様</h3>
+              </div>
+              <p class="p-access__text">首都高西新宿出入り口より10分</p>
+            </div>
+            <div class="p-access__address">
+              <p>あいぼう水族館</p>
+              <p>〒160-0000　東京都新宿区新宿3丁目38-1</p>
+              <p>TEL：01-2345-XXXX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="p-footer l-footer">
+    <div class="p-footer__inner">
+      <ul class="p-footer__menu">
+        <li class="p-footer__link"><a href="#">営業案内・料金</a></li>
+        <li class="p-footer__link"><a href="#">イベント</a></li>
+        <li class="p-footer__link"><a href="#">展示案内</a></li>
+        <li class="p-footer__link"><a href="#">お食事</a></li>
+        <li class="p-footer__link"><a href="#">アクセス</a></li>
+        <li class="p-footer__link"><a href="#">会社情報</a></li>
+        <li class="p-footer__link"><a href="#">動物取扱業に関する表示</a></li>
+        <li class="p-footer__link"><a href="#">プライバシーポリシー</a></li>
+      </ul>
+      <div class="p-footer__sns">
+        <ul class="p-sns">
+          <li class="p-sns__icon"><a href="#"><img src="./dist/images/top/twitter.png" alt=""></a></li>
+          <li class="p-sns__icon"><a href="#"><img src="./dist/images/top/instagram.png" alt=""></a></li>
+          <li class="p-sns__icon"><a href="#"><img src="./dist/images/top/facebook.png" alt=""></a></li>
+        </ul>
+      </div>
+      <figure class="p-footer__logo p-logo">
+        <img src="./dist/images/top/logo.png" alt="">
+      </figure>
+      <div class="p-footer__copyright">
+        <small>Copyright &copy; ibow aquarium All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./dist/js/common.js"></script>
+</body>
+
+</html>

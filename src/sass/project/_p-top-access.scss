@@ -1,0 +1,23 @@
+@use "setting" as *;
+
+.p-top-access__top::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/hagi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(129);
+  height: rem(74);
+  top: -35%;
+  left: 17%;
+  transform: translateY(-50%);
+  @include mq("md") {
+    width: rem(259);
+    height: rem(149);
+  }
+}
+
+.p-top-access__contents {
+  margin-top: rem(120);
+}

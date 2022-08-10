@@ -1,0 +1,14 @@
+@use "setting" as *;
+
+.p-section-top {
+  position: relative;
+  text-align: center;
+}
+
+.p-section-top__title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}

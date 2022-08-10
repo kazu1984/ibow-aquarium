@@ -1,0 +1,31 @@
+@use "setting" as *;
+
+.c-button {
+  display: inline-block;
+  font-size: rem(18);
+  font-weight: $medium;
+  color: $color-theme-main;
+  background-color: $color-button-background;
+  padding: rem(22) rem(55);
+  border-radius: 60px;
+  @include mq("md") {
+    font-size: rem(20);
+    padding: rem(25) rem(60);
+  }
+}
+
+.c-button--info {
+  font-size: rem(14);
+  padding: rem(6) rem(30);
+}
+
+.c-button--food {
+  padding: rem(22) rem(30);
+  @include mq("md") {
+    padding: rem(25) rem(42);
+  }
+}
+
+.c-button:hover {
+  opacity: 0.7;
+}

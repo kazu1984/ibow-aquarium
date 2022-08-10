@@ -1,0 +1,5 @@
+@use "setting" as *;
+
+.c-title-underline {
+  border-bottom: 1px solid $color-table-boder;
+}

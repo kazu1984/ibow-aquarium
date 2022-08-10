@@ -1,0 +1,39 @@
+@use "setting" as *;
+
+.p-top-mv {
+  color: $color-base-third;
+  background-image: url("../images/top/mv.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: rem(700);
+}
+
+.p-top-mv__inner {
+  position: relative;
+  height: inherit;
+}
+
+.p-top-mv__text {
+  position: absolute;
+  bottom: rem(70);
+  font-weight: $medium;
+}
+
+.p-top-mv__sub-text {
+  font-size: rem(18);
+  @include mq("md") {
+    font-size: rem(24);    
+  }
+}
+
+.p-top-mv__main-text {
+  font-size: rem(28);
+  margin-top: rem(15);
+  line-height: 1.666;
+  @include mq("md") {
+    font-size: rem(48);
+    
+  }
+}

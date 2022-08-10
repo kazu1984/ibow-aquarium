@@ -1,0 +1,6 @@
+@use "setting" as *;
+
+.l-top-pickup {
+  margin-top: -12%;
+  z-index: map-get($layer, "pickup"); 
+}

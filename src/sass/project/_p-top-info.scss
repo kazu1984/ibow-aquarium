@@ -1,0 +1,23 @@
+@use "setting" as *;
+
+.p-top-info__inner {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.p-top-info__news {
+  @include mq("md") {
+    width: 50%;
+  }
+}
+
+.p-top-info__corona {
+  margin-top: rem(80);
+  padding-bottom: rem(8);
+  @include mq("md") {
+    margin-top: rem(10);
+    margin-left: 5.56%;
+    width: 50%;
+  }
+}

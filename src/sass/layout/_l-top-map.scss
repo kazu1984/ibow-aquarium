@@ -1,0 +1,6 @@
+@use "setting" as *;
+
+.l-top-map {
+  margin-top: -12%;
+  z-index: map-get($layer, "map"); 
+}

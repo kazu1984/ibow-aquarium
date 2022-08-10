@@ -1,0 +1,41 @@
+@use "setting" as *;
+
+.c-event-title {
+  position: relative;
+  display: inline-block;
+  color: $color-theme-main;
+  line-height: 1;
+}
+
+.c-event-title__en {
+  font-size: rem(64);
+  font-family: $second-font-family;
+  color: rgba($color-theme-main, 0.08);
+  text-transform: uppercase;
+  @include mq("md") {
+    font-size: rem(150);
+  }
+}
+
+.c-event-title__en--sm {
+  @include mq("md") {
+    font-size: rem(120);
+  }
+}
+
+.c-event-title__ja {
+  font-size: rem(18);
+  font-weight: $medium;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  @include mq("md") {
+    font-size: rem(28);
+  }
+}
+
+.c-event-title__ja--right {
+  text-align: right;
+}

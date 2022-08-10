@@ -1,0 +1,26 @@
+@use "setting" as *;
+
+.c-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.c-meta__title {
+  color: $color-base-third;
+  background-color: $color-theme-main;
+  text-align: center;
+  width: rem(110);
+  padding: rem(5) 0;
+}
+
+.c-meta__text {
+  width: calc(100% - rem(120));
+  margin-left: rem(10);
+  text-align: left;
+}
+
+.c-meta__title:not(:first-of-type),
+.c-meta__text:not(:first-of-type) {
+  margin-top: rem(12);
+}

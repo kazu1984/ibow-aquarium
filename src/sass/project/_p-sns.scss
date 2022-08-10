@@ -1,0 +1,20 @@
+@use "setting" as *;
+
+.p-sns {
+  display: inline-flex;
+  align-items: center;
+}
+
+.p-sns__icon {
+  width: rem(35);
+  height: rem(35);
+  transition: transform $transition;
+}
+
+.p-sns__icon:hover {
+  transform: translateY(-8px);
+}
+
+.p-sns__icon  + .p-sns__icon:not(:first-child) {
+  margin-left: rem(20);
+}

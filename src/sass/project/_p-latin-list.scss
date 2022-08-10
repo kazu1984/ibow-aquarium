@@ -1,0 +1,33 @@
+@use "setting" as *;
+
+.p-latin-list {
+  text-align: left;
+  counter-reset: num;
+}
+
+.p-latin-list__item {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5em;
+  padding-left: rem(44);
+}
+
+.p-latin-list__item + .p-latin-list__item {
+  margin-top: rem(37);
+}
+
+.p-latin-list__item::before {
+  position: absolute;
+  counter-increment: num;
+  content: counter(num, upper-alpha);
+  display: inline-block;
+  background: $color-list-latin;
+  color: $color-base-third;
+  font-weight: $medium;
+  left: 0;
+  width: rem(31);
+  height: rem(31);
+  line-height: rem(31);
+  text-align: center;
+  top: rem(-5);
+}

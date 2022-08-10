@@ -1,0 +1,27 @@
+@use "setting" as *;
+
+.p-business-hours {
+  display: inline-block;
+  background-color: $color-theme-main;
+  border-radius: 60px;
+  color: $color-base-third;
+  padding: rem(10) rem(55);
+  text-align: center;
+}
+
+.p-business-hours__time {
+  font-size: rem(22);
+  font-weight: $medium;
+  @include mq("md") {
+    font-size: rem(34);
+  }
+}
+
+.p-business-hours__close {
+  display: inline-block;
+  font-size: rem(14);
+  color: $grey2;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0 rem(20);
+}

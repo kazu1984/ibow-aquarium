@@ -1,0 +1,18 @@
+@use "setting" as *;
+
+.p-header {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.p-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+}
+
+.p-header__logo {
+  width: rem(122);
+  height: rem(69);
+}

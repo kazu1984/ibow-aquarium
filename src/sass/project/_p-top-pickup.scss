@@ -1,0 +1,121 @@
+@use "setting" as *;
+
+.p-top-pickup {
+  position: relative;
+}
+
+.p-top-pickup__contents {
+  padding-top: rem(120);
+  padding-bottom: rem(160);
+  background-color: $color-theme-pale;
+  @include mq("md") {
+    padding-top: rem(37);
+    padding-bottom: rem(28);
+  }
+}
+
+.p-top-pickup__cards {
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(42);
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.p-top-pickup__cards--4 {
+  gap: rem(34);
+  grid-template-columns: repeat(2, 1fr);
+  @include mq("md") {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.p-top-pickup__images-title {
+  text-align: center;
+  margin-top: rem(125);
+}
+
+.p-top-pickup__images-title .c-dot-wave:first-of-type {
+  @include mq("md") {
+    transform: translateX(-57px);
+  }
+}
+
+.p-top-pickup__images-title .c-dot-wave:last-of-type {
+  @include mq("md") {
+    transform: translateX(95px);
+  }
+}
+
+.p-top-pickup__images-title-text {
+  display: inline-block;
+  position: relative;
+  font-size: rem(28);
+  font-weight: $medium;
+  color: $color-theme-main;
+  margin: rem(16) 0;  
+}
+
+.p-top-pickup__images-title-text::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/kumanomi.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(130);
+  height: rem(95);
+  bottom: rem(45);
+  right: 50%;
+  transform: translateX(50%);
+  @include mq("md") {
+    bottom: 0;
+    right: rem(-79);
+    transform: none;
+  }
+}
+
+.p-top-pickup__images {
+  margin-top: rem(50);
+}
+
+.p-top-pickup__images .p-card:nth-child(even) {
+  @include mq("md") {
+    margin-top: rem(60);
+  }
+}
+
+.p-top-pickup__bottom {
+  position: relative;
+}
+
+.p-top-pickup__bottom::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/top/fish2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: rem(134);
+  height: rem(72);
+  top: rem(-15);
+  left: rem(30);
+  @include mq("md") {
+    width: rem(260);
+    height: rem(125);
+    top: rem(140);
+    left: rem(310);
+  }
+}
+
+.p-top-pickup__button {
+  position: absolute;
+  top: rem(-120);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  @include mq("md") {
+    top: rem(75);
+  }
+}

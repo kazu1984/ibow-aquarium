@@ -1,0 +1,9 @@
+@use "setting" as *;
+
+.c-bg-sand {
+  background-image: url(../images/top/bg-sand.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}

@@ -1,0 +1,34 @@
+@use "setting" as *;
+
+.p-num-list {
+  text-align: left;
+  counter-reset: num;
+}
+
+.p-num-list__item {
+  position: relative;
+  padding-left: 30px;
+  line-height: 1.5em;
+  padding-left: rem(57);
+}
+
+.p-num-list__item + .p-num-list__item {
+  margin-top: rem(22);
+}
+
+.p-num-list__item::before {
+  position: absolute;
+  counter-increment: num;
+  content: counter(num);
+  display: inline-block;
+  background: $color-theme-main;
+  color: $color-base-third;
+  font-weight: $medium;
+  border-radius: 50%;
+  left: 0;
+  width: rem(34);
+  height: rem(34);
+  line-height: rem(34);
+  text-align: center;
+  top: rem(-5);
+}

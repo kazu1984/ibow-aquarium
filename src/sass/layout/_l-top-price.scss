@@ -1,0 +1,6 @@
+@use "setting" as *;
+
+.l-top-price {
+  margin-top: -12%;
+  z-index: map-get($layer, "price"); 
+}

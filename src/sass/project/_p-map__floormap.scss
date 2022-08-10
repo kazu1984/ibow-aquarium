@@ -1,0 +1,8 @@
+@use "setting" as *;
+
+.p-map__floormap {
+  padding-top: rem(150);
+  @include mq("md") {
+    padding-top: rem(37);
+  }
+}

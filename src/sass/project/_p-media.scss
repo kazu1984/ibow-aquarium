@@ -1,0 +1,116 @@
+@use "setting" as *;
+
+.p-media__inner {
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.p-media__body {
+  position: relative;
+  text-align: center;
+  @include mq("md") {
+    text-align: left;
+  }
+}
+
+.p-media__title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @include mq("md") {
+    left: initial;
+    transform: none;
+  }
+}
+
+.p-media__small-title {
+  font-size: rem(28);
+  font-weight: $medium;
+}
+
+.p-media__text {
+  display: inline-block;
+  margin-top: rem(110);
+  text-align: left;
+  @include mq("md") {
+    margin-top: rem(139);
+  }
+}
+
+.p-media__text--food {
+  margin-top: rem(50);
+  @include mq("md") {
+    margin-top: rem(45)
+  }
+}
+
+.p-media__img {
+  margin-top: rem(50);
+  margin-left: 0;
+  @include mq("md") {
+    flex: 0 0 65.31%;
+    margin-top: 0;
+    margin-left: rem(10);
+  }
+}
+
+.p-media__img--food {
+  @include mq("md") {
+    margin-left: rem(45);
+  }
+}
+
+.p-media__img img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 800 / 550;
+}
+
+.p-media__meta {
+  max-width: 300px;
+  margin-top: rem(37);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  @include mq("md") {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.p-media__meta-box:nth-of-type(n + 2) {
+  margin-top: rem(10);
+}
+
+.p-media__meta-sub {
+  display: inline-block;
+  font-size: rem(14);
+  margin-top: rem(10);
+}
+
+.p-media__button {
+  margin-top: rem(100);
+}
+
+// ----------------------------------------
+// 偶数行のレイアウト調整
+// ----------------------------------------
+.p-media:nth-child(even) .p-media__inner {
+  @include mq("md") {
+    flex-direction: row-reverse;
+  }
+}
+
+.p-media:nth-child(even) .p-media__title {
+  @include mq("md") {
+    right: 0;
+  }
+}
+
+.p-media:nth-child(even) .p-media__text,
+.p-media:nth-child(even) .p-media__meta {
+  @include mq("md") {
+    margin-left: rem(35);
+  }
+}
